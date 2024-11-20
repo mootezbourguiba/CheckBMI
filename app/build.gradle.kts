@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "tm.esprit.checkbmi"
-    compileSdk = 34
+    compileSdk = 35 // Met à jour vers la version 35
 
     defaultConfig {
         applicationId = "tm.esprit.checkbmi"
         minSdk = 25
-        targetSdk = 34
+        targetSdk = 35 // Met à jour vers la version 35
         versionCode = 1
         versionName = "1.0"
 
@@ -36,8 +36,7 @@ android {
 }
 
 dependencies {
-
-    implementation(libs.androidx.core.ktx)
+    implementation("androidx.core:core-ktx:1.15.0") // Mets à jour vers la dernière version
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
